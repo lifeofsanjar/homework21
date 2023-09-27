@@ -1,0 +1,177 @@
+.table {
+  margin-top: 27px;
+
+  .section__title {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+  .section_sub_title {
+    margin-top: 8px;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .table__wrapper {
+    margin-top: 100px;
+    display: flex;
+    // justify-content: space-between;
+    gap: 75px;
+
+    .cards_table {
+      border-radius: 8px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+      width: 350px;
+      background: #fff;
+      padding: 0 px;
+      display: flex;
+      justify-content: center;
+      //   align-items: center;
+      flex-direction: column;
+      padding-bottom: 32px;
+    }
+    .green_card {
+      background: #02897a;
+
+      h3,
+      p,
+      ul,
+      li,
+      button {
+        color: #fff;
+      }
+
+      .green_card_btn {
+        background: #fff;
+        color: #02897a;
+      }
+    }
+    .card_top_title {
+      text-align: center;
+      padding-top: 24px;
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 166.667% */
+    }
+
+    .card_subtitle {
+      width: 322px;
+      text-align: center;
+      margin-top: 8px;
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 250% */
+    }
+
+    .card_price {
+      text-align: start;
+      color: #02897a;
+      padding-left: 75px;
+      //   text-align: center;
+      font-family: Poppins;
+      font-size: 76px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100px; /* 131.579% */
+      letter-spacing: 0.2px;
+      position: relative;
+    }
+    .green_card_price:after {
+      content: "$";
+      position: absolute;
+      color: #fff !important;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px; /* 125% */
+      letter-spacing: 0.1px;
+      top: 20px;
+    }
+
+    .card_price:after {
+      content: "$";
+      position: absolute;
+      color: #02897a;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px; /* 125% */
+      letter-spacing: 0.1px;
+      top: 20px;
+    }
+    .card_price::before {
+      content: "Per / month";
+      position: absolute;
+      color: #afafaf;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 19px; /* 118.75% */
+      letter-spacing: 0.1px;
+      top: 60px;
+      left: 40%;
+    }
+
+    .card__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 16px;
+      gap: 16px;
+    }
+
+    .card_items {
+      color: #22343d;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px; /* 137.5% */
+      letter-spacing: 0.2px;
+    }
+
+    .card_btn {
+      margin-top: 38px;
+      padding: 11px 19px;
+      border: none;
+      border-radius: 8px;
+      background: #02897a;
+
+      color: #fff;
+      // font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
+// media
+
+@media (max-width: 1000px) {
+  .table__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}

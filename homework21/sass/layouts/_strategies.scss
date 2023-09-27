@@ -1,0 +1,126 @@
+.content__strategy {
+  margin-top: 150px;
+
+  .content__title {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .cont_desc {
+    margin-top: 8px;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    margin-bottom: 33px;
+  }
+
+  .content__wrapper {
+    display: flex;
+    gap: 30px;
+
+    .content_card {
+      max-width: 348px;
+      width: 100%;
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .card_info {
+      padding: 24px 30px;
+    }
+
+    .card_desc {
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+    }
+    .card_body {
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 166.667% */
+    }
+
+    .gren_desc {
+      color: #02897a;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 166.667% */
+    }
+
+    .card_desc span {
+      color: #22343d;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+    }
+  }
+
+  .str_image {
+    max-width: 352px;
+    border-radius: 12px;
+    width: 100%;
+  }
+}
+
+.circles {
+  margin: auto;
+  margin-top: 60px;
+  width: 20px;
+  height: 20px;
+  background: #02897a;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circles:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  top: 0;
+  left: -40px;
+}
+
+.circles::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  top: 0;
+  left: 40px;
+}
+// media
+
+@media (max-width: 1000px) {
+  .content__title {
+    text-align: center;
+  }
+  .cont_desc {
+    text-align: center;
+  }
+  .content__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,96 @@
+.clients {
+  margin-top: 150px;
+
+  .top_deyail {
+    .clients_title {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 57px; /* 167.647% */
+      letter-spacing: 0.2px;
+      text-align: center;
+    }
+
+    .clients_desc {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 175% */
+      letter-spacing: 0.2px;
+      margin-top: 8px;
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  .clients_wr {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    justify-content: space-between;
+
+    .clients__card {
+      width: 327px;
+      padding: 28px 26px;
+      background: #fff;
+      border-radius: 5px;
+      border: 1px solid #dedede;
+
+      .card_desc_clients {
+        color: #737373;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+        letter-spacing: 0.2px;
+        margin-top: 16px;
+        max-width: 275px;
+      }
+
+      .image_users {
+        display: flex;
+        margin-top: 17px;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .image_users li:nth-child(1) {
+        color: #02897a;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.2px;
+      }
+
+      .image_users li:nth-child(2) {
+        color: #252b42;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 171.429% */
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+}
+
+// media
+
+@media (max-width: 1000px) {
+  .clients_wr {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+}

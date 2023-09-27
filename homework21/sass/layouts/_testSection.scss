@@ -1,0 +1,137 @@
+.tests {
+  margin-top: 150px;
+  background-size: cover;
+  background-position: center;
+  // image goes here
+
+  .title_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .tests_title {
+      color: #fff;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      max-width: 534px;
+    }
+  }
+
+  .test_wrapper {
+    margin-top: 58px;
+    display: flex;
+    // justify-content: space-between;
+    gap: 50px;
+
+    .test_cards {
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+
+  .btn_wr {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .test__btn {
+      padding: 15px 32px;
+      border-radius: 4px;
+      background: #02897a;
+      border: none;
+      //   text
+      color: #fff;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      transition: 0.4s;
+    }
+  }
+
+  .bg_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mouse_wr {
+    background: #02897a;
+  }
+  .survey_wr {
+    background: #4d8dff;
+  }
+  .like_wr {
+    background: #740a76;
+  }
+  .timer_wr {
+    background: #f03e3d;
+  }
+
+  .test_cards h3 {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .test_cards p {
+    margin-top: 13px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+
+  .test__btn:hover {
+    background: #fff;
+    color: #1f2e35;
+  }
+}
+
+// media
+
+@media (max-width: 650px) {
+  .test_wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .test_cards {
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .test_cards p {
+    text-align: center;
+  }
+  .mouse_wr {
+    justify-content: center;
+    align-self: center;
+  }
+  .bg_image {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 95px;
+  }
+}
